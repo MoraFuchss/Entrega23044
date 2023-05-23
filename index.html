@@ -15,6 +15,10 @@
         #gradiente{
             background-image: linear-gradient(to right, #1d3744, #1d3e4f, #1d455a, #1d4c66, #1e5372);
         }
+
+        #carta{
+            border-radius: 0%;
+        }
     </style>
 </head>
 <body>
@@ -43,7 +47,7 @@
                 <a class="nav-link" href="#orador">Conviertete en orador</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-success">Comprar tickets</a>
+                <a class="nav-link text-success" href="#carta">Comprar tickets</a>
             </li>
             </ul>
         </div>
@@ -180,6 +184,74 @@
         </div>
     </div>
     <BR>
+    <!--tickets-->
+    <div class="d-flex flex-column flex-md-row justify-content-center">
+        <div id="carta" class="card border-primary" style="width: 18rem;">
+            <div class="card-body">
+                <h4 class="card-title text-center p-2">Estudiante</h4>
+                <h6 class="card-title text-center p-2">Tienen un descuento</h6>
+                <h5 class="card-title text-center p-2">15%</h5>
+                <p class="card-text text-center text-muted p-2">*presentar documentación</p>
+            </div>
+        </div>
+        <div id="carta" class="card border-success ms-2" style="width: 18rem;">
+            <div class="card-body">
+                <h4 class="card-title text-center p-2">Trainee</h4>
+                <h6 class="card-title text-center p-2">Tienen un descuento</h6>
+                <h5 class="card-title text-center p-2">15%</h5>
+                <p class="card-text text-center text-muted p-2">*presentar documentación</p>
+            </div>
+        </div>
+        <div id="carta" class="card border-warning ms-2" style="width: 18rem;">
+            <div class="card-body">
+                <h4 class="card-title text-center p-2 ps-1">Junior</h4>
+                <h6 class="card-title text-center p-2 ps-1">Tienen un descuento</h6>
+                <h5 class="card-title text-center p-2 ps-1">15%</h5>
+                <p class="card-text text-center text-muted p-2">*presentar documentación</p>
+            </div>
+        </div>
+    </div>
+    <div class="m-3 text-center">
+        <div class="small">VENTA</div>
+        <h2>VALOR DE TICKET $200</h2>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <input type="text" class="form-control form-control-lg" placeholder="Nombre" aria-label="Nombre" value="" required>
+        </div>
+        <div class="col-4">
+            <input type="text" class="form-control form-control-lg" placeholder="Apellido" aria-label="Apellido" required>
+        </div>
+        <div class="col-8">
+            <input type="email" class="form-control  form-control-lg mt-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo" required>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+        <div class="col-4">
+            <label for="floatingInputGrid" class="form-label" style="font-size: x-large;">Cantidad</label>
+            <input type="number" class="form-control form-control-lg" id="floatingInputGrid" required placeholder="Cantidad" value="mdo@example.com">
+        </div>
+        <div class="col-4">
+            <label for="floatingSelectGrid" class="form-label" style="font-size: x-large;">Categoría</label>
+                <select class="form-select form-select-lg" required id="floatingSelectGrid">
+                    <option value="80">Estudiante</option>
+                    <option value="50">Trainee</option>
+                    <option value="15">Junior</option>
+                </select>
+        </div>
+        <div class="col-8 p-3">
+            <input class="form-control form-control-lg" style="background-color: rgb(204, 229, 255); border-color: rgb(184, 218, 255);" type="text" value="Total a pagar: $"  id="precioFinal" aria-label="Ejemplo de input deshabilitado" disabled readonly>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-2">
+        <div class="d-grid col-4">
+            <button id="boton" class="btn btn-primary" onclick="borrar()" style="font-size: x-large;" type="button">Borrar</button>
+        </div>
+        <div class="d-grid col-4">
+            <button id="boton" class="btn btn-primary" onclick="precioTotal()" style="font-size: x-large;" type="button">Resumen</button>
+        </div>
+    </div>
+<br>
     <!--footer-->
         <div class="d-flex justify-content-evenly text-center align-items-center p-3" id="gradiente" >
             <div class="text-wrap" style="width: 6rem;" ><a href="#"style="text-decoration:none" class="text-white">Preguntas frecuentes</a></div>
@@ -190,6 +262,7 @@
             <div class="fst-normal"><a href="#" style="text-decoration:none" class="text-white">Privacidad</a></div>
             <div class="fst-normal"><a href="#" style="text-decoration:none" class="text-white">Estudiantes</a></div>
         </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
