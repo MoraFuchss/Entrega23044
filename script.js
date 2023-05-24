@@ -32,3 +32,4 @@ function precioTotal(){
         }, false)
     })
 })()
+
