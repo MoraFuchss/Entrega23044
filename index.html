@@ -215,15 +215,17 @@
         <div class="small">VENTA</div>
         <h2>VALOR DE TICKET $200</h2>
     </div>
+    <form action="" class="needs-validation" novalidate>
     <div class="row justify-content-center">
         <div class="col-4">
-            <input type="text" class="form-control form-control-lg" placeholder="Nombre" aria-label="Nombre" value="" required>
+            <input type="text" for="Nombre" maxlength="35" class="form-control form-control-lg" placeholder="Nombre" aria-label="Nombre" value="" required>
+            <div class="valid-feedback"></div>
         </div>
         <div class="col-4">
-            <input type="text" class="form-control form-control-lg" placeholder="Apellido" aria-label="Apellido" required>
+            <input type="text" for="Apellido" maxlength="35"class="form-control form-control-lg" placeholder="Apellido" aria-label="Apellido" required>
         </div>
         <div class="col-8">
-            <input type="email" class="form-control  form-control-lg mt-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo" required>
+            <input type="email" for="Mail" class="form-control  form-control-lg mt-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo" required>
         </div>
     </div>
     <div class="row justify-content-center mt-4">
@@ -245,12 +247,13 @@
     </div>
     <div class="row justify-content-center mt-2">
         <div class="d-grid col-4">
-            <button id="boton" class="btn btn-primary" onclick="borrar()" style="font-size: x-large;" type="button">Borrar</button>
+            <input id="boton" class="btn text-white" type="reset" value="Borrar" style="font-size: x-large;" type="button">
         </div>
         <div class="d-grid col-4">
-            <button id="boton" class="btn btn-primary" onclick="precioTotal()" style="font-size: x-large;" type="button">Resumen</button>
+            <button id="boton" class="btn btn-primary" onclick="precioTotal()" style="font-size: x-large;" type="submit button">Resumen</button>
         </div>
     </div>
+</form>
 <br>
     <!--footer-->
         <div class="d-flex justify-content-evenly text-center align-items-center p-3" id="gradiente" >
